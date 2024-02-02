@@ -1,0 +1,146 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.App {
+  text-align: center;
+  background-color: black; /* Set the background color to black */
+  position: relative;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.App-header {
+  background-color: black; /* Set the background color to black */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; /* Set the text color to white */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.background-right {
+  position: fixed;
+  bottom: -500px;
+  left: 400px;
+  width: 1498.63px; /* Adjust the width as needed */
+  height: 1655.13px; /* Adjust the height as needed */
+  background-image: url('/public/images/backgroud_right.png'); /* Updated path */
+  background-size: cover;
+}
+
+.background-left {
+  position: fixed;
+
+  bottom: -800px;
+  left: -900px;
+  width: 1522.65px; /* Adjust the width as needed */
+  height: 1532.78px; /* Adjust the height as needed */
+  background-image: url('/public/images/background_left.png'); /* Specify the path to your bottom_left.png */
+  background-size: cover;
+}
+
+.background-net {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-image: url('/public/images/background_net.png'); 
+  background-size: cover;
+}
+
+.panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 700px;
+  width: 1000px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.21);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-box-container {
+  position: relative;
+  width: 80%;
+  margin-top: auto;
+}
+
+/* Input box */
+.input-box {
+  width: calc(100% - 40px); /* Adjust the width as needed, considering the button */
+  
+  height: 35px;
+  margin-top: auto; 
+  padding: 10px;
+  border: 1px solid #fff; 
+  border-radius: 15px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+/* Square button inside the input box */
+.input-button {
+  position: absolute;
+  top: 50%;
+  right: 15px; /* Adjust the right distance as needed */
+  transform: translateY(-50%);
+  width: 40px; /* Adjust the width as needed for a square button */
+  height: 40px; /* Adjust the height as needed for a square button */
+  background-color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: black; /* Adjust the text color as needed */
+}
+
+.panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.panel li {
+  text-align: left;
+  display: flex;
+  margin-bottom: 10px; /* Add spacing between the entered text items */
+}
+
+.chat-log {
+  display: flex;
+  align-items:flex-start;
+  justify-content: flex-start;
+  align-self: flex-start;
+  flex-direction: column-reverse; /* Reverse the order to show the latest message on top */
+  }
+
+.chat-item {
+  display: flex;
+  align-items: start;
+  align-self: flex-start;
+  left: 100px!important;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  width: 100%; /* Ensure the message takes the full width */
+}
